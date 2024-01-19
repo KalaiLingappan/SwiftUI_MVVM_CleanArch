@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ListView()
+        AppDIRegistry().bookListView
     }
 }
 
@@ -18,3 +18,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

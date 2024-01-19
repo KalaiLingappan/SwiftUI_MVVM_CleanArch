@@ -8,6 +8,6 @@
 import Foundation
 
 struct ListDataModel: Decodable {
-    let total_count: Int
-    let results: [Property]
+    let totalItems: Int
+    let items: [BookDataDTO]
 }

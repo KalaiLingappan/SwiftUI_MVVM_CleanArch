@@ -12,5 +12,5 @@ struct ListDataRequest: DataRequest {
     var url: String = AppURLs.baseURL + AppURLs.URLEndPoint.list.rawValue
     var method: HTTPMethod = .get
     var headers: [String : String] = [:]
-    var queryItems: [String : String] = ["limit": "20"]
+    var queryItems: [String : String] = ["q": "fiction"]
 }
