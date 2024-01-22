@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ListDataModel: Decodable {
+struct BookListDataModel: Decodable {
     let totalItems: Int
     let items: [BookDataDTO]
 }

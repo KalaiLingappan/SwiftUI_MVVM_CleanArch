@@ -18,6 +18,10 @@ struct BookListRowItem: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text(bookDetail.title)
                     .font(.headline)
+                if let subtitle = bookDetail.subtitle {
+                    Text(subtitle)
+                        .font(.subheadline)
+                }
                 Text(bookDetail.publisher ?? "")
                     .foregroundColor(.gray)
             }

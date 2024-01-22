@@ -11,15 +11,8 @@ struct Book {
     let bookID: String
     let title: String
     let subtitle: String?
-    let description: String?
-    let pageCount: Int?
     let imageLink: String?
     let publisher: String?
-    let publishedDate: String?
-    let language: String?
-    let contentVersion: String?
-    let authors: [String]?
-    let categories: [String]?
 }
 
 extension Book {

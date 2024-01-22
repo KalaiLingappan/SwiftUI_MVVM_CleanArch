@@ -8,7 +8,7 @@
 import NetworkManager
 
 struct ListDataRequest: DataRequest {
-    typealias ResponseData = ListDataModel
+    typealias ResponseData = BookListDataModel
     var url: String = AppURLs.baseURL + AppURLs.URLEndPoint.list.rawValue
     var method: HTTPMethod = .get
     var headers: [String : String] = [:]
