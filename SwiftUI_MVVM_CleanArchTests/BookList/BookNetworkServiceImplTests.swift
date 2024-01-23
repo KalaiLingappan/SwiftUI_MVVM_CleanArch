@@ -11,8 +11,22 @@ import NetworkManager
 @testable import SwiftUI_MVVM_CleanArch
 
 final class BookNetworkServiceImplTests: XCTestCase {
-    let mockNetworkService = MockNetworkService()
-    lazy var bookNetworkService = BookNetworkServiceImpl(networkService: mockNetworkService)
+    var mockNetworkService: MockNetworkService!
+    var bookNetworkService: BookNetworkServiceImpl!
+    
+    override func setUp() {
+        super.setUp()
+        
+        mockNetworkService = MockNetworkService()
+        bookNetworkService = BookNetworkServiceImpl(networkService: mockNetworkService)
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+       
+        mockNetworkService = nil
+        bookNetworkService = nil
+    }
     
     func testFetchBooksSuccess() async throws {
         mockNetworkService.mockListDataModel = MockData.bookListDataModel

@@ -10,8 +10,22 @@ import NetworkManager
 @testable import SwiftUI_MVVM_CleanArch
 
 final class FetchBooksUseCaseImplTests: XCTestCase {
-    let mockBookRepository = MockBookRepository()
-    lazy var bookUseCase = FetchBooksUseCaseImpl(bookRepository: mockBookRepository)
+    var mockBookRepository: MockBookRepository!
+    var bookUseCase: FetchBooksUseCaseImpl!
+    
+    override func setUp() {
+        super.setUp()
+        
+        mockBookRepository = MockBookRepository()
+        bookUseCase = FetchBooksUseCaseImpl(bookRepository: mockBookRepository)
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+       
+        mockBookRepository = nil
+        bookUseCase = nil
+    }
     
     func testFetchBookSuccess() async throws {
         mockBookRepository.mockBookDomainDTO = MockData.bookDomainDTO

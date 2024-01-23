@@ -11,8 +11,21 @@ import NetworkManager
 @testable import SwiftUI_MVVM_CleanArch
 
 final class BookListViewModelTests: XCTestCase {
-    let mockFetchBookUseCase = MockFetchBooksUseCase()
-    lazy var viewModel = BookListViewModel(fetchBooksUseCase: mockFetchBookUseCase)
+    var mockFetchBookUseCase: MockFetchBooksUseCase!
+    var viewModel : BookListViewModel!
+    
+    override func setUp() {
+        super.setUp()
+        
+        mockFetchBookUseCase = MockFetchBooksUseCase()
+        viewModel = BookListViewModel(fetchBooksUseCase: mockFetchBookUseCase)
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        mockFetchBookUseCase = nil
+        viewModel = nil
+    }
     
     func testFetchData() async throws {
         mockFetchBookUseCase.mockBooks = MockData.bookList
