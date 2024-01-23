@@ -15,12 +15,12 @@ struct AsyncImageView: View {
         if let imageURL = url {
             WebImage(url: imageURL)
                 .resizable()
-                .placeholder(Image(systemName: "photo")) // Placeholder while loading
-                .indicator(.activity) // Loading indicator
-                .transition(.fade(duration: 0.5)) // Fade transition
+                .placeholder(Image(systemName: AppConstants.placeholderImageName))
+                .indicator(.activity)
+                .transition(.fade(duration: 0.5))
                 .scaledToFit()
         } else {
-            Image(systemName: "photo")
+            Image(systemName: AppConstants.placeholderImageName)
                 .resizable()
                 .scaledToFit()
         }

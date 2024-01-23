@@ -22,6 +22,7 @@
 		A36792012B5F8DB200C97CDC /* MockFetchBooksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317488F2B5E424E001A7142 /* MockFetchBooksUseCase.swift */; };
 		A36792022B5F8DB900C97CDC /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317488B2B5C3B63001A7142 /* MockData.swift */; };
 		A36792032B5F8EAB00C97CDC /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = A31748892B5C39B4001A7142 /* Mock.json */; };
+		A36792072B5FACE700C97CDC /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36792062B5FACE700C97CDC /* AppConstants.swift */; };
 		A38C75422B5163F60075F2B0 /* SwiftUI_MVVM_CleanArchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C75412B5163F60075F2B0 /* SwiftUI_MVVM_CleanArchApp.swift */; };
 		A38C75462B5163F90075F2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38C75452B5163F90075F2B0 /* Assets.xcassets */; };
 		A38C75492B5163F90075F2B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38C75482B5163F90075F2B0 /* Preview Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		A31748952B5E42F0001A7142 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		A31748972B5E4656001A7142 /* BookNetworkServiceImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNetworkServiceImplTests.swift; sourceTree = "<group>"; };
 		A36791F32B5F8D8500C97CDC /* SwiftUI_MVVM_CleanArchSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_MVVM_CleanArchSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36792062B5FACE700C97CDC /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		A3722C5E2B5E8BC7007B4A7B /* BookListViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A38C753E2B5163F60075F2B0 /* SwiftUI_MVVM_CleanArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_MVVM_CleanArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38C75412B5163F60075F2B0 /* SwiftUI_MVVM_CleanArchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVM_CleanArchApp.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				A38C75852B5165860075F2B0 /* URLConstants.swift */,
+				A36792062B5FACE700C97CDC /* AppConstants.swift */,
 			);
 			path = AppConstants;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				A38C758D2B5165870075F2B0 /* BooksListDashboardView.swift in Sources */,
 				A38C758A2B5165870075F2B0 /* BookDataDTO.swift in Sources */,
 				A38C758F2B5165870075F2B0 /* BookListView.swift in Sources */,
+				A36792072B5FACE700C97CDC /* AppConstants.swift in Sources */,
 				A38C75922B5165870075F2B0 /* FetchBooksUseCase.swift in Sources */,
 				A38C75892B5165870075F2B0 /* BookImage.swift in Sources */,
 				A38C75C72B5A6B540075F2B0 /* BookRepository.swift in Sources */,

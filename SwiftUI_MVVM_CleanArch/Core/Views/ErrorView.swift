@@ -12,7 +12,7 @@ struct ErrorView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "exclamationmark.triangle")
+            Image(systemName: AppConstants.placeholderErrorImageName)
             Text(errorMessage)
                 .font(.headline)
                 .fontDesign(.serif)
