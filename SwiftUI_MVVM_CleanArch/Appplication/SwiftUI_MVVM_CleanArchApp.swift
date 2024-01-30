@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_MVVM_CleanArchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(appDIRegistry: AppDIRegistry())
         }
     }
 }

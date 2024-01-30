@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    let appDIRegistry: AppDIRegistry
+    
     var body: some View {
-        AppDIRegistry().bookListView
+        appDIRegistry.bookListView
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(appDIRegistry: AppDIRegistry())
     }
 }
 

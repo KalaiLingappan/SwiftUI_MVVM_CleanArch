@@ -15,7 +15,6 @@ struct ErrorView: View {
             Image(systemName: AppConstants.placeholderErrorImageName)
             Text(errorMessage)
                 .font(.headline)
-                .fontDesign(.serif)
                 .padding()
                 .multilineTextAlignment(.center)
         }

@@ -16,7 +16,7 @@ final class BookListViewSnapshotTests: XCTestCase {
     var mockFetchBookUseCase: MockFetchBooksUseCase!
     var viewModel: BookListViewModel!
     
-    let deviceName = "iPhoneSE"
+    let deviceName = "iPhone13"
 
     override func setUp() {
         super.setUp()
@@ -63,7 +63,7 @@ extension UIViewController {
             testName: String = "Snapshot") {
             assertSnapshot(
                 matching: self,
-                as: .image(on: .iPhoneSe),
+                as: .image(on: .iPhone13),
                 named: name,
                 testName: testName)
         }
