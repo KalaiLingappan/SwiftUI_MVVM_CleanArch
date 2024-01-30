@@ -9,7 +9,7 @@ import NetworkManager
 
 class AppDIRegistry {
     var networkService: NetworkService {
-        DataNetworkService()
+        DataNetworkService(urlSession: SecureURLSession.shared)
     }
     
     lazy var bookListView: BooksListDashboardView = {
