@@ -8,7 +8,7 @@
 import Foundation
 import NetworkManager
 
-class BookListViewModel: ObservableObject {
+final class BookListViewModel: ObservableObject {
     @Published var booksList: [Book] = []
     @Published var errorMessage: String = ""
     private let fetchBooksUseCase: FetchBooksUseCase

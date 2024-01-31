@@ -7,7 +7,7 @@
 
 @testable import SwiftUI_MVVM_CleanArch
 
-class MockFetchBooksUseCase: FetchBooksUseCase {
+final class MockFetchBooksUseCase: FetchBooksUseCase {
     var mockBooks: [Book] = []
     var mockError: Error?
     

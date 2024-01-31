@@ -39,7 +39,7 @@ final class BookNetworkServiceImplTests: XCTestCase {
         mockNetworkService.mockError = ErrorResponse.invalidData
 
         do {
-            let bookListDataModel = try await bookNetworkService.fetchBooks()
+            let _ = try await bookNetworkService.fetchBooks()
             XCTFail("Success not expected")
         }
         catch {

@@ -9,7 +9,7 @@ import NetworkManager
 
 @testable import SwiftUI_MVVM_CleanArch
 
-class MockNetworkService: NetworkService {
+final class MockNetworkService: NetworkService {
     var mockListDataModel: BookListDataModel?
     var mockError: Error?
 

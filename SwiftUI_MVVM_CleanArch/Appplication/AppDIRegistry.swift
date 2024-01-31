@@ -7,7 +7,7 @@
 
 import NetworkManager
 
-class AppDIRegistry {
+final class AppDIRegistry {
     var networkService: NetworkService {
         DataNetworkService(urlSession: SecureURLSession.shared)
     }

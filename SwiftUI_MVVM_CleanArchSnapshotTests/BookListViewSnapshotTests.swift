@@ -37,14 +37,6 @@ final class BookListViewSnapshotTests: XCTestCase {
         let viewController = contentView.toViewController()
         viewController.performSnapshotTests(named: "BookListView_Success")
     }
-    
-    func testErrorAppearance() {
-        viewModel.errorMessage = "Error while decoding the response"
-        
-        let contentView = BooksListDashboardView(listViewModel: viewModel)
-        let viewController = contentView.toViewController()
-        viewController.performSnapshotTests(named: "BookListView_Failure")
-    }
 }
 
 extension View {

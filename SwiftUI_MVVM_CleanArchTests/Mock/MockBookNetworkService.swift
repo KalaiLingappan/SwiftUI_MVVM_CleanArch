@@ -7,7 +7,7 @@
 
 @testable import SwiftUI_MVVM_CleanArch
 
-class MockBookNetworkService: BookNetworkService {
+final class MockBookNetworkService: BookNetworkService {
     var mockBookDataDTO: [BookDataDTO] = []
     var mockError: Error?
     

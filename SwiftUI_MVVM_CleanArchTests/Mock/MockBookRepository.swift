@@ -7,7 +7,7 @@
 
 @testable import SwiftUI_MVVM_CleanArch
 
-class MockBookRepository: BookRepository {
+final class MockBookRepository: BookRepository {
     var mockBookDomainDTO: [BookDomainDTO] = []
     var mockError: Error?
     

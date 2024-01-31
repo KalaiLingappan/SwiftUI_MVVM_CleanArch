@@ -7,7 +7,7 @@
 
 import NetworkManager
 
-class BooksListFactory {
+final class BooksListFactory {
     private let networkService: NetworkService
     
     init(networkService: NetworkService) {
