@@ -174,6 +174,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A32395362B6A597600518B84 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				A38C75D22B5ACD2E0075F2B0 /* Views */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
 		A36791F42B5F8D8500C97CDC /* SwiftUI_MVVM_CleanArchSnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +217,7 @@
 			children = (
 				A3D015DC2B67CB1F005BC842 /* SwiftUI-MVVM-CleanArch-Info.plist */,
 				A38C75C02B5974B00075F2B0 /* Appplication */,
+				A32395362B6A597600518B84 /* CommonUI */,
 				A38C75832B5165860075F2B0 /* Core */,
 				A38C75C52B597C2D0075F2B0 /* Features */,
 				A38C75472B5163F90075F2B0 /* Preview Content */,
@@ -282,7 +291,6 @@
 		A38C75832B5165860075F2B0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A38C75D22B5ACD2E0075F2B0 /* Views */,
 				A38C75BA2B596DDF0075F2B0 /* AppConstants */,
 			);
 			path = Core;
