@@ -11,7 +11,7 @@ protocol FetchBooksUseCase {
     func execute() async throws -> [Book]
 }
 
-class FetchBooksUseCaseImpl: FetchBooksUseCase {
+final class FetchBooksUseCaseImpl: FetchBooksUseCase {
     private let bookRepository: BookRepository
 
     init(bookRepository: BookRepository) {

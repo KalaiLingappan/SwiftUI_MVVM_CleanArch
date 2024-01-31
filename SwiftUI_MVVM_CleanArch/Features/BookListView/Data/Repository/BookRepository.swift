@@ -11,7 +11,7 @@ protocol BookRepository {
     func fetchBooks() async throws -> [BookDomainDTO]
 }
 
-class BookRepositoryImpl: BookRepository {
+final class BookRepositoryImpl: BookRepository {
     private let bookNetworkService: BookNetworkService
 
     init(bookNetworkService: BookNetworkService) {

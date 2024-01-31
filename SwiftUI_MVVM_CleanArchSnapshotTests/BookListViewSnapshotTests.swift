@@ -16,8 +16,6 @@ final class BookListViewSnapshotTests: XCTestCase {
     var mockFetchBookUseCase: MockFetchBooksUseCase!
     var viewModel: BookListViewModel!
     
-    let deviceName = "iPhone15_Plus"
-
     override func setUp() {
         super.setUp()
         
@@ -37,7 +35,7 @@ final class BookListViewSnapshotTests: XCTestCase {
         
         let contentView = BooksListDashboardView(listViewModel: viewModel)
         let viewController = contentView.toViewController()
-        viewController.performSnapshotTests(named: "BookListView_Success_\(deviceName)")
+        viewController.performSnapshotTests(named: "BookListView_Success")
     }
     
     func testErrorAppearance() {
@@ -45,7 +43,7 @@ final class BookListViewSnapshotTests: XCTestCase {
         
         let contentView = BooksListDashboardView(listViewModel: viewModel)
         let viewController = contentView.toViewController()
-        viewController.performSnapshotTests(named: "BookListView_Failure_\(deviceName)")
+        viewController.performSnapshotTests(named: "BookListView_Failure")
     }
 }
 
