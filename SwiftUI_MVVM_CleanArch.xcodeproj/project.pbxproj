@@ -15,6 +15,7 @@
 		A31748942B5E42C0001A7142 /* MockBookNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31748932B5E42C0001A7142 /* MockBookNetworkService.swift */; };
 		A31748962B5E42F0001A7142 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31748952B5E42F0001A7142 /* MockNetworkService.swift */; };
 		A31748982B5E4656001A7142 /* BookNetworkServiceImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31748972B5E4656001A7142 /* BookNetworkServiceImplTests.swift */; };
+		A323953B2B6A791D00518B84 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A323953A2B6A791D00518B84 /* BookDetailView.swift */; };
 		A3485DA52B5EAE32001EABA7 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A3485DA42B5EAE32001EABA7 /* SnapshotTesting */; };
 		A36791FD2B5F8D9000C97CDC /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A36791FC2B5F8D9000C97CDC /* SnapshotTesting */; };
 		A36791FF2B5F8D9900C97CDC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A36791FE2B5F8D9900C97CDC /* SDWebImageSwiftUI */; };
@@ -51,6 +52,7 @@
 		A38C75CD2B5ABCAC0075F2B0 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C75CC2B5AB6680075F2B0 /* Book.swift */; };
 		A38C75CF2B5AC72E0075F2B0 /* BooksListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C75CE2B5AC72E0075F2B0 /* BooksListFactory.swift */; };
 		A38C75D12B5ACAA40075F2B0 /* AppDIRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C75D02B5ACAA40075F2B0 /* AppDIRegistry.swift */; };
+		A3C922E82B6A86D30000FFC5 /* BookDetailViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C922E72B6A86D30000FFC5 /* BookDetailViewSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,7 @@
 		A31748932B5E42C0001A7142 /* MockBookNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBookNetworkService.swift; sourceTree = "<group>"; };
 		A31748952B5E42F0001A7142 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		A31748972B5E4656001A7142 /* BookNetworkServiceImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNetworkServiceImplTests.swift; sourceTree = "<group>"; };
+		A323953A2B6A791D00518B84 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		A36791F32B5F8D8500C97CDC /* SwiftUI_MVVM_CleanArchSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_MVVM_CleanArchSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36792062B5FACE700C97CDC /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		A3722C5E2B5E8BC7007B4A7B /* BookListViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewSnapshotTests.swift; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 		A38C75CC2B5AB6680075F2B0 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		A38C75CE2B5AC72E0075F2B0 /* BooksListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListFactory.swift; sourceTree = "<group>"; };
 		A38C75D02B5ACAA40075F2B0 /* AppDIRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIRegistry.swift; sourceTree = "<group>"; };
+		A3C922E72B6A86D30000FFC5 /* BookDetailViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A3D015DC2B67CB1F005BC842 /* SwiftUI-MVVM-CleanArch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-MVVM-CleanArch-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -182,10 +186,27 @@
 			path = CommonUI;
 			sourceTree = "<group>";
 		};
+		A32395382B6A653A00518B84 /* BookDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A3C922E62B6A830E0000FFC5 /* Presentation */,
+			);
+			path = BookDetailView;
+			sourceTree = "<group>";
+		};
+		A32395392B6A78D500518B84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A323953A2B6A791D00518B84 /* BookDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A36791F42B5F8D8500C97CDC /* SwiftUI_MVVM_CleanArchSnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
 				A3722C5E2B5E8BC7007B4A7B /* BookListViewSnapshotTests.swift */,
+				A3C922E72B6A86D30000FFC5 /* BookDetailViewSnapshotTests.swift */,
 			);
 			path = SwiftUI_MVVM_CleanArchSnapshotTests;
 			sourceTree = "<group>";
@@ -398,6 +419,7 @@
 		A38C75C52B597C2D0075F2B0 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				A32395382B6A653A00518B84 /* BookDetailView */,
 				A38C756C2B5165860075F2B0 /* BookListView */,
 			);
 			path = Features;
@@ -410,6 +432,14 @@
 				A38C75792B5165860075F2B0 /* ErrorView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A3C922E62B6A830E0000FFC5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A32395392B6A78D500518B84 /* Views */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -562,6 +592,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C922E82B6A86D30000FFC5 /* BookDetailViewSnapshotTests.swift in Sources */,
 				A36792012B5F8DB200C97CDC /* MockFetchBooksUseCase.swift in Sources */,
 				A36792022B5F8DB900C97CDC /* MockData.swift in Sources */,
 				A36792002B5F8DA200C97CDC /* BookListViewSnapshotTests.swift in Sources */,
@@ -592,6 +623,7 @@
 				A38C75C92B5A77EF0075F2B0 /* BookNetworkService.swift in Sources */,
 				A38C758B2B5165870075F2B0 /* BookListDataModel.swift in Sources */,
 				A38C75422B5163F60075F2B0 /* SwiftUI_MVVM_CleanArchApp.swift in Sources */,
+				A323953B2B6A791D00518B84 /* BookDetailView.swift in Sources */,
 				A38C75882B5165870075F2B0 /* BookListViewModel.swift in Sources */,
 				A38C75D12B5ACAA40075F2B0 /* AppDIRegistry.swift in Sources */,
 			);

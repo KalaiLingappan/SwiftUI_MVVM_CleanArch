@@ -10,6 +10,7 @@ struct BookDomainDTO: Decodable {
     let title: String
     let subtitle: String?
     let imageLink: String?
+    let description: String?
     let publisher: String?
 }
 
@@ -19,6 +20,7 @@ extension BookDomainDTO {
              title: title,
              subtitle: subtitle,
              imageLink: imageLink,
+             description: description,
              publisher: publisher)
     }
 }

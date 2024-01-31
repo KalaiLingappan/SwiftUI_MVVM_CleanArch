@@ -11,10 +11,14 @@ struct BookListView: View {
     let bookList: [Book]
     
     var body: some View {
-        VStack {
-            List(bookList, id: \.bookID) { book in
-                BookListRowItem(bookDetail: book)
-            }.animation(.easeInOut, value: 1.0)
+        NavigationView {
+            VStack {
+                List(bookList, id: \.bookID) { book in
+                    NavigationLink(destination: BookDetailView(bookDetail: book)) {
+                        BookListRowItem(bookDetail: book)
+                    }
+                }.animation(.easeInOut, value: 1.0)
+            }
         }
     }
 }

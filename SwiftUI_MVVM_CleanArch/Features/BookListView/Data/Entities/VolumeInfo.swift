@@ -11,5 +11,6 @@ struct VolumeInfo: Decodable {
     let title: String
     let subtitle: String?
     let imageLinks: BookImage?
+    let description: String?
     let publisher: String?
 }

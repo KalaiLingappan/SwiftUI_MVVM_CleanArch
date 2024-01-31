@@ -16,6 +16,7 @@ extension BookDataDTO {
                       title: volumeInfo.title,
                       subtitle: volumeInfo.subtitle,
                       imageLink: volumeInfo.imageLinks?.thumbnail,
+                      description: volumeInfo.description,
                       publisher: volumeInfo.publisher)
     }
 }
