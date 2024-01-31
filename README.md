@@ -22,4 +22,4 @@ This is a sample application demonstrating the MVVM design pattern integrated wi
 - I have created this custom Swift package, to streamline API requests, manage responses, and handle errors in the application's networking layer.
 
 ## Snapshot Testing Environment
-- Snapshot testing was recorded using an iPhone 13, iOS 17.2.
+- Snapshot testing was recorded using an iPhone 15 plus, iOS 17.2.
