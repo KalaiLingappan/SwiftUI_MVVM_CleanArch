@@ -50,10 +50,11 @@ extension View {
 extension UIViewController {
     func performSnapshotTests(
             named name: String,
+            precision: Float = 0.99,
             testName: String = "Snapshot") {
             assertSnapshot(
                 matching: self,
-                as: .image(),
+                as: .image(precision: precision),
                 named: name,
                 testName: testName)
         }
